@@ -1,0 +1,872 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="apple-touch-icon" sizes="180x180" href="bbc/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="bbc/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="bbc/favicon-16x16.png">
+<link rel="manifest" href="bbc/site.webmanifest">
+<link rel="mask-icon" href="bbc/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" integrity="sha384-4LISF5TTJX/fLmGSxO53rV4miRxdg84mZsxmO8Rx5jGtp/LbrixFETvWa5a6sESd" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>BBC</title>
+</head>
+<body>
+    <nav class="nav border-bottom px-3 py-2 d-flex align-items-center justify-content-between">
+        <div class="n-left d-flex gap-3 fw-bold fs-4">
+            
+            <button class="btn btn-dark" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                <i class="bi bi-list"></i>
+              </button>
+              
+              <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title w-100" id="offcanvasExampleLabel"><input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"></h5>
+                  <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                  <div class="border">
+                    Home
+                  </div>
+                  <div class="dropdown mt-2">
+                    <button class="btn btn-transparent border w-100 dropdown-toggle d-flex align-items-center justify-content-between" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown">
+                      News
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </div>
+                  <!-- dropdown-1 end -->
+
+                  <div class="border btn btn-transparent w-100 text-start">
+                    Sport
+                  </div>
+
+                  <div class="dropdown mt-2">
+                    <button class="btn btn-transparent border w-100 dropdown-toggle d-flex align-items-center justify-content-between" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown">
+                      Business
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </div>
+                  <!-- dropdown-2 end -->
+
+                  <div class="dropdown mt-2">
+                    <button class="btn btn-transparent border w-100 dropdown-toggle d-flex align-items-center justify-content-between" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown">
+                      Innovation
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </div>
+                  <!-- dropdown-3 end -->
+
+                  <div class="dropdown mt-2">
+                    <button class="btn btn-transparent border w-100 dropdown-toggle d-flex align-items-center justify-content-between" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown">
+                      Culture
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </div>
+                  <!-- dropdown-4 end -->
+
+                  <div class="dropdown mt-2">
+                    <button class="btn btn-transparent border w-100 dropdown-toggle d-flex align-items-center justify-content-between" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown">
+                      Travel
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </div>
+                  <!-- dropdown-5 end -->
+
+                  <div class="dropdown mt-2">
+                    <button class="btn btn-transparent border w-100 dropdown-toggle d-flex align-items-center justify-content-between" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown">
+                      Earth
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </div>
+                  <!-- dropdown-6 end -->
+
+                  <div class="border btn btn-transparent w-100 text-start">
+                    Video
+                  </div>
+
+                  <div class="dropdown mt-2">
+                    <button class="btn btn-transparent border w-100 dropdown-toggle d-flex align-items-center justify-content-between" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown">
+                      News
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </div>
+                  <!-- dropdown-7 end -->
+
+                  <div class="border btn btn-transparent w-100 text-start">
+                    Audio
+                  </div>
+
+                  <div class="border btn btn-transparent w-100 text-start">
+                    Weather
+                  </div>
+                </div>
+              </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <i class="bi bi-search"></i>
+        </div>
+        <!-- n-left end -->
+        <div class="n-center">
+            <a href="#" class="d-flex fw-bold align-items-center justify-content-between gap-2">
+                <h4>B</h4>
+                <h4>B</h4>
+                <h4>C</h4>
+            </a>
+        </div>
+        <!-- n-center -->
+        <div class="n-right d-flex gap-3">
+            <button type="button" class="btn btn-dark">Register</button>
+            <button type="button" class="btn btn-light">Sign In</button>
+        </div>
+        <!-- n-right end -->
+    </nav>
+    <!-- nav end -->
+
+    <div class="hnsbictevl border-bottom d-flex align-items-center justify-content-center">
+        <ul class="m-0 p-0 fw-bold d-flex align-items-center justify-content-center">
+            <li><a href="#">Home</a></li>
+            <li class="border-bottom border-3 border-danger"><a href="#">News</a></li>
+            <li><a href="#">Sport</a></li>
+            <li><a href="#">Business</a></li>
+            <li><a href="#">Innovation</a></li>
+            <li><a href="#">Culture</a></li>
+            <li><a href="#">Travel</a></li>
+            <li><a href="#">Earth</a></li>
+            <li><a href="#">Video</a></li>
+            <li><a href="#">Live</a></li>
+        </ul>
+    </div>
+    <!-- hnsbictevl end -->
+
+    <div class="iwiuaelmb border-bottom border-dark d-flex align-items-center justify-content-center">
+        <ul class="m-0 p-0 d-flex align-items-center justify-content-center">
+            <li><a href="#">Israel-Gaza War</a></li>
+            <li><a href="#">War in Ukraine</a></li>
+            <li><a href="#">India Election</a></li>
+            <li><a href="#">US & Canada</a></li>
+            <li><a href="#">UK</a></li>
+            <li><a href="#">Africa</a></li>
+            <li><a href="#">Asia</a></li>
+            <li><a href="#">Australia</a></li>
+            <li><a href="#">Europe</a></li>
+            <li><a href="#">Latin America</a></li>
+            <li><a href="#">Middle East</a></li>
+            <li><a href="#">In Pictures</a></li>
+            <li><a href="#">BBC Verify</a></li>
+        </ul>
+    </div>
+    <!-- iwiuaelmb end -->
+
+    <div class="ad d-flex align-items-center justify-content-center border-bottom border-dark">
+        <img src="https://tpc.googlesyndication.com/simgad/8706652222439736384" alt="">
+    </div>
+    <!-- ad end -->
+
+<div class="container">
+<div class="n border-bottom border-dark border-4 d-flex align-items-end justify-content-start">
+    <h1 class="fw-bold m-0">News</h1>
+</div>
+<!-- n end -->
+
+<div class="four-crds">
+    <div class="o">
+        <div class="card border-bottom">
+            <div class="row g-0">
+                <div class="col-md-4 d-flex align-items-center justify-content-center">
+                    <div class="card-body">
+                      <h3 class="card-title fs-3">British man killed as London-Singapore flight hit by turbulence</h3>
+                      <p class="card-text">Singapore Airlines says several others were hurt and the flight was diverted to Bangkok.</p>
+                      <p class="card-text"><small class="text-muted">13 mins ago &nbsp; | &nbsp; Asia</small></p>
+                    </div>
+                  </div>
+              <div class="col-md-8">
+                <img src="https://ichef.bbci.co.uk/news/1024/cpsprodpb/e461/live/07644a00-176a-11ef-80aa-699d54c46324.jpg.webp" class="img-fluid rounded-start" alt="...">
+              </div>             
+            </div>
+          </div>
+    </div>
+    <!-- o end -->
+
+    <div class="g">
+        <div class="card h-100 border-bottom">
+            <img src="https://ichef.bbci.co.uk/news/640/cpsprodpb/e2c4/live/d1436a50-1755-11ef-976f-87c9f89e656e.png.webp" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">What the ICC arrest warrants mean for Israel and Hamas</h5>
+              <p class="card-text">The Israeli and Hamas leaders are suspected of committing war crimes during the continuing war in Gaza.</p>
+              <p class="card-text"><small class="text-muted">10 hrs ago &nbsp; | &nbsp; BBC InDepth</small></p>
+            </div>
+          </div>
+    </div>
+    <!-- g end -->
+
+    <div class="w">
+        <div class="card border-bottom">
+    <img src="https://ichef.bbci.co.uk/ace/standard/640/cpsprodpb/13E69/production/_133331518_15a8ad47b1b9ee9106f0f48008de5d8cdd20fbe10_0_4728_35481000x750.jpg.webp" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">
+        <div style="width: 20px; height: 20px;" class="spinner-grow text-danger" role="status">
+            <span class="visually-hidden">Loading...</span>
+          </div> <span>LIVE</span> British man, 73, dies during severe turbulence on London-Singapore flight</h5>
+      <p class="card-text">Authorities say the man "likely" died of a heart attack; seven others are critically injured.</p>
+      <p class="card-text"><small class="text-muted"></small></p>
+    </div>
+  </div>
+    </div>
+    <!-- w end -->
+
+    <div class="l">
+        <div class="card border-bottom">
+    <img src="https://ichef.bbci.co.uk/news/640/cpsprodpb/161f/live/1d128f00-16b2-11ef-9b12-1ba8f95c4917.jpg.webp" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Greek court throws out shipwreck trial against nine men</h5>
+      <p class="card-text">The judges ruled they had no jurisdiction to hear the case as the boat sank in international waters.</p>
+      <p class="card-text"><small class="text-muted">3 hrs ago &nbsp; | &nbsp; Europe</small></p>
+    </div>
+  </div>
+    </div>
+    <!-- l end -->
+
+    <div class="j">
+        <div class="card border-bottom">
+    <img src="https://ichef.bbci.co.uk/news/640/cpsprodpb/a54b/live/baf13bb0-1732-11ef-a5f9-c9e97f2e93cf.jpg.webp" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Japan blocks iconic Mt Fuji view to deter tourists</h5>
+      <p class="card-text">A big barrier is erected as local residents accuse tourists of dropping litter and parking illegally.</p>
+      <p class="card-text"><small class="text-muted">9 hrs ago &nbsp; | &nbsp; Asia</small></p>
+    </div>
+  </div>
+    </div>
+    <!-- j end -->
+
+    <div class="i">
+        <div class="card border-bottom">
+    <img src="https://ichef.bbci.co.uk/news/640/cpsprodpb/57da/live/b5cd42f0-172d-11ef-90ce-5b9d15334b2a.jpg.webp" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">I am a love child, not a Chinese spy, says mayor</h5>
+      <p class="card-text">Alice Guo insists she is a Philippine citizen in the face of weeks of criticism.</p>
+      <p class="card-text"><small class="text-muted">3 hrs ago &nbsp; | &nbsp; Europe</small></p>
+    </div>
+  </div>
+    </div>
+    <!-- i end -->
+
+    <div class="t">
+        <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">France's president to fly to riot-hit New Caledonia</h5>
+              <p class="card-text">Macron held a defence council on the New Caledonia situation at the Elysee Palace in Paris on Monday</p>
+              <p class="card-text"><small class="text-muted">4 hrs ago &nbsp; | &nbsp; Europe</small></p>
+            </div>
+          </div>
+    </div>
+    <!-- t end -->
+
+    <div class="a">
+        <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">The many colours of India’s election campaigns</h5>
+              <p class="card-text">
+                India's general election, the world's largest democratic exercise, is a long, colourful and visual affair.</p>
+              <p class="card-text"><small class="text-muted">10 hrs ago &nbsp; | &nbsp; India</small></p>
+            </div>
+          </div>
+    </div>
+    <!-- a end -->
+</div>
+<!-- four-crds end -->
+
+        <div class="card-group">
+            <div class="card">
+              <div class="card-body">
+                <a href="#"><h5 class="card-title">Netanyahu denounces bid to arrest him over Gaza war</h5></a>
+                <p class="card-text"><small class="text-muted">7 hrs ago &nbsp;|&nbsp; World</small></p>
+              </div>
+            </div>
+            <!-- card-1 end -->
+
+            <div class="card">
+              <div class="card-body">
+               <a href="#"><h5>BMW and Jaguar used banned China parts - US probe</h5></a>
+                <p class="card-text"><small class="text-muted">2 hrs ago &nbsp;|&nbsp; Business</small></p>
+              </div>
+            </div>
+            <!-- card-2 end -->
+
+            <div class="card">
+              <div class="card-body">
+                <a href="#"><h5>What the ICC arrest warrants mean for Israel and Hamas</h5></a>
+                <p class="card-text"><small class="text-muted">6 hrs ago &nbsp;|&nbsp; BBC InDepth</small></p>
+              </div>
+            </div>
+            <!-- card-3 end -->
+
+            <div class="card">
+                <div class="card-body">
+                  <a href="#"><h5>These elephants are dying on rail tracks - can AI save them?</h5></a>
+                  <p class="card-text"><small class="text-muted">7 hrs ago &nbsp;|&nbsp; India</small></p>
+                </div>
+              </div>
+              <!-- card-4 end -->
+
+              <div class="card">
+                <div class="card-body">
+                  <a href="#"><h5>Australia striker Kerr ruled out of Olympics</h5></a>
+                  <p class="card-text"><small class="text-muted">8 hrs ago &nbsp;|&nbsp; Women's Football</small></p>
+                </div>
+              </div>
+              <!-- card-5 end -->
+          </div>
+          <!-- card-group end -->
+
+<div class="four-crds-parent border-top border-3 border-dark">
+    <h4>Features and analysis</h4>
+<div class="four-crds-b">
+<div class="oa">
+    <div class="card border-bottom">
+        <div class="row g-0">
+            <div class="col-md-4 d-flex align-items-center justify-content-center">
+                <div class="card-body">
+                    <h3 class="card-title fs-3">What next for Iran after President Raisi's death?</h3>
+                    <p class="card-text">Raisi's death will test a system where hardliners dominate all branches of power, Lyse Doucet writes.</p>
+                    <p class="card-text"><small class="text-muted">1 day ago &nbsp; | &nbsp; BBC InDepth</small></p>
+                </div>
+                </div>
+            <div class="col-md-8">
+            <img src="https://ichef.bbci.co.uk/news/1024/cpsprodpb/8405/live/4db67af0-1689-11ef-a5f9-c9e97f2e93cf.png.webp" alt="...">
+            </div>             
+        </div>
+        </div>
+</div>
+<!-- o end -->
+
+<div class="ga">
+    <div class="card h-100 border-bottom">
+        <img src="https://ichef.bbci.co.uk/news/640/cpsprodpb/f2bd/live/e0a62e40-16df-11ef-ab0f-9fc9906536da.jpg.webp" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">How Iranians reacted to president's helicopter crash</h5>
+            <p class="card-text">Shock and disbelief spread through social media as news about President Ebrahim Raisi’s helicopter broke.</p>
+            <p class="card-text"><small class="text-muted">20 hrs ago &nbsp; | &nbsp; Middle East</small></p>
+        </div>
+        </div>
+</div>
+<!-- g end -->
+
+<div class="wa">
+    <div class="card border-bottom">
+<img src="https://ichef.bbci.co.uk/news/640/cpsprodpb/5803/live/585197e0-16c7-11ef-976f-87c9f89e656e.jpg.webp" class="card-img-top" alt="...">
+<div class="card-body">
+    <h5 class="card-title">Mind games: Hellblade returns to explore psychosis</h5>
+    <p class="card-text">An acclaimed video game series returns to shine a light on a misunderstood mental health condition.</p>
+    <p class="card-text"><small class="text-muted">17 hrs ago</small></p>
+</div>
+</div>
+</div>
+<!-- w end -->
+
+<div class="ja">
+    <div class="card border-bottom">
+<img src="https://ichef.bbci.co.uk/news/640/cpsprodpb/11E92/production/_133326337_gettyimages-2153272090.jpg.webp" class="card-img-top" alt="...">
+<div class="card-body">
+    <h5 class="card-title">'Stop threatening us', Taiwan's new president tells China</h5>
+    <p class="card-text">He urged Beijing to replace confrontation with dialogue, shortly after being sworn in on Monday.</p>
+    <p class="card-text"><small class="text-muted">1 day ago &nbsp; | &nbsp; Asia</small></p>
+</div>
+</div>
+</div>
+<!-- j end -->
+
+<div class="ia">
+    <div class="card border-bottom">
+<img src="https://ichef.bbci.co.uk/news/640/cpsprodpb/9C1A/production/_133326993_p0hz43fm.jpg.webp" class="card-img-top" alt="...">
+<div class="card-body">
+    <h5 class="card-title">Watch: How Iran state TV broke news of president's death</h5>
+    <p class="card-text">Footage shows the site of the helicopter crash which killed the president and foreign minister.</p>
+    <p class="card-text"><small class="text-muted">1 day ago &nbsp; | &nbsp; Middle East</small></p>
+</div>
+</div>
+</div>
+<!-- i end -->
+
+<div class="ta">
+    <div class="card">
+        <div class="card-body">
+            <h5 class="card-title">Three-quarters of Gaza marked as IDF evacuation zones, BBC finds</h5>
+            <p class="card-text">Israel's army says it is protecting Palestinian civilians, but the UN says there are no safe areas.</p>
+            <p class="card-text"><small class="text-muted">1 day ago &nbsp; | &nbsp; Middle East</small></p>
+        </div>
+        </div>
+</div>
+<!-- t end -->
+
+<div class="aa">
+    <div class="card">
+        <div class="card-body">
+            <h5 class="card-title">‘My heart still hurts’: The personal sacrifice of revealing a K-pop scandal</h5>
+            <p class="card-text">Two journalists reveal how they bore the brunt of fans' anger after exposing K-pop's dark underbelly.</p>
+            <p class="card-text"><small class="text-muted">3 days ago &nbsp; | &nbsp; Asia</small></p>
+        </div>
+        </div>
+</div>
+<!-- a end -->
+</div>
+<!-- four-crds-2 end -->
+</div>
+<!-- four-crds-parent-1 end -->
+
+</div>
+<!-- container end -->
+
+<div class="ad-parent d-flex align-items-center justify-content-center">
+<div class="ad d-flex align-items-center justify-content-center">
+    <img src="https://tpc.googlesyndication.com/simgad/12210398120211558898" alt="">
+</div>
+<!-- ad-2 end -->
+</div>
+<!-- ad-parent end -->
+
+<div class="container">
+<div class="mw border-top border-3 border-dark">
+<h3 class="fw-bold mb-3">Most watched</h3>
+<div class="osmbn d-flex align-items-start justify-content-center gap-4">
+    <div class="osmbn-crd d-flex align-items-start gap-2">
+        <h2>1</h2>
+        <a href="#"><div class="card-text"><i class="bi bi-play-fill"></i> One-minute World News</div></a>
+    </div>
+    <!-- osmbn-crd-1 end -->
+    <div class="osmbn-crd d-flex align-items-start gap-2">
+        <h2>2</h2>
+        <a href="#"><div class="card-title"><i class="bi bi-play-fill"></i> Slovak PM shot in apparent assassination attempt</div></a>
+    </div>
+    <!-- osmbn-crd-2 end -->
+    <div class="osmbn-crd d-flex align-items-start gap-2">
+        <h2>3</h2>
+        <a href="#"><div class="card-title"><i class="bi bi-play-fill"></i> Moment leading up to shooting of Slovak PM</div></a>
+    </div>
+    <!-- osmbn-crd-3 end -->
+    <div class="osmbn-crd d-flex align-items-start gap-2">
+        <h2>4</h2>
+        <a href="#"><div class="card-title"><i class="bi bi-play-fill"></i> Baby Reindeer'a big problem' for Netflix and Gadd - Morgan</div></a>
+    </div>
+    <!-- osmbn-crd-4 end -->
+    <div class="osmbn-crd d-flex align-items-start gap-2">
+        <h2>5</h2>
+        <a href="#"><div class="card-title"><i class="bi bi-play-fill"></i> Metherlands prepares for storm surge</div></a>
+    </div>
+    <!-- osmbn-crd-5 end -->
+</div>
+<!-- osmbn end -->
+</div>
+<!-- mw end -->
+
+<div class="four-crds-parent border-top border-3 border-dark">
+    <h4>Also in news</h4>
+<div class="four-crds-b">
+<div class="oa">
+    <div class="card border-bottom">
+        <div class="row g-0">
+            <div class="col-md-4 d-flex align-items-center justify-content-center">
+                <div class="card-body">
+                    <h3 class="card-title fs-3">Decades after training, 90-year-old finally goes to space</h3>
+                    <p class="card-text">Ed Dwight was the first black astronaut candidate in 1961 - but was never picked for a Nasa mission.</p>
+                    <p class="card-text"><small class="text-muted">19 hrs ago &nbsp; | &nbsp; US & Canada</small></p>
+                </div>
+                </div>
+            <div class="col-md-8">
+            <img src="https://ichef.bbci.co.uk/news/1024/cpsprodpb/B1B4/production/_133329454_p0hz7f25.jpg.webp" alt="...">
+            </div>             
+        </div>
+        </div>
+</div>
+<!-- o end -->
+
+<div class="ga">
+    <div class="card h-100 border-bottom">
+        <img src="https://ichef.bbci.co.uk/news/640/cpsprodpb/C6E9/production/_133312905_p0hz2gjt.jpg.webp" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">The many colours of India’s election campaigns</h5>
+            <p class="card-text">India's general election, the world's largest democratic exercise, is a long, colourful and visual affair.</p>
+            <p class="card-text"><small class="text-muted">13 hrs ago &nbsp; | &nbsp; India</small></p>
+        </div>
+        </div>
+</div>
+<!-- g end -->
+
+<div class="wa">
+    <div class="card border-bottom">
+<img src="https://ichef.bbci.co.uk/news/640/cpsprodpb/5803/live/585197e0-16c7-11ef-976f-87c9f89e656e.jpg.webp" class="card-img-top" alt="...">
+<div class="card-body">
+    <h5 class="card-title">Delhi sizzles as temperatures cross 45C</h5>
+    <p class="card-text">Parts of northern India are reeling under an intense heatwave that's set to last through the week.</p>
+    <p class="card-text"><small class="text-muted">1 day ago &nbsp; | &nbsp; Asia</small></p>
+</div>
+</div>
+</div>
+<!-- w end -->
+
+<div class="ja">
+    <div class="card border-bottom">
+<img src="https://ichef.bbci.co.uk/news/640/cpsprodpb/a322/live/9f522300-171f-11ef-9b12-1ba8f95c4917.png.webp" class="card-img-top" alt="...">
+<div class="card-body">
+    <h5 class="card-title">South Korea bans TikTok hit 'idolishing' Kim Jong Un</h5>
+    <p class="card-text">The boppy propaganda tune extols Kim Jong Un as a "friendly father" and "great leader".</p>
+    <p class="card-text"><small class="text-muted">14 hrs ago &nbsp; | &nbsp; Asia</small></p>
+</div>
+</div>
+</div>
+<!-- j end -->
+
+<div class="ia">
+    <div class="card border-bottom">
+<img src="https://ichef.bbci.co.uk/news/640/cpsprodpb/adf8/live/6718d150-1710-11ef-a762-7f93a78476c3.jpg.webp" class="card-img-top" alt="...">
+<div class="card-body">
+    <h5 class="card-title">BMW and Jaguar used banned China parts - US probe</h5>
+    <p class="card-text">The car makers used parts made by a supplier banned over alleged links to Chinese forced labour.</p>
+    <p class="card-text"><small class="text-muted">6 hrs ago &nbsp; | &nbsp; Business</small></p>
+</div>
+</div>
+</div>
+<!-- i end -->
+
+<div class="ta">
+    <div class="card">
+        <div class="card-body">
+            <h5 class="card-title">Australia striker Kerr ruled out of Olympics</h5>
+            <p class="card-text">Australia striker Sam Kerr is ruled out of the Olympics after injuring her anterior cruciate ligament n January.</p>
+            <p class="card-text"><small class="text-muted">13 hrs ago &nbsp; | &nbsp; Women's Football</small></p>
+        </div>
+        </div>
+</div>
+<!-- t end -->
+
+<div class="aa">
+    <div class="card">
+        <div class="card-body">
+            <h5 class="card-title">Assassin's Creed director: The right time to take series to Japan</h5>
+            <p class="card-text">Assassin’s Creed: Shadows is a long-awaited pivot for the franchise into the country’s feudal 16th Century.</p>
+            <p class="card-text"><small class="text-muted">2 days ago &nbsp; | &nbsp; Asia</small></p>
+        </div>
+        </div>
+</div>
+<!-- a end -->
+</div>
+<!-- four-crds-3 end -->
+</div>
+<!-- four-crds-parent-2 end -->
+</div>
+<!-- container end -->
+
+<div class="ad-parent d-flex align-items-center justify-content-center">
+    <div class="ad d-flex align-items-center justify-content-center">
+        <img src="https://tpc.googlesyndication.com/simgad/1125322173834933426" alt="">
+    </div>
+    <!-- ad-3 end -->
+    </div>
+    <!-- ad-parent end -->
+
+<div class="container">
+<div class="mw border-top border-3 border-dark">
+<h3 class="fw-bold mb-3">Most read</h3>
+<div class="osmbn d-flex align-items-start justify-content-center gap-4 flex-wrap">
+    <div class="osmbn-crd d-flex align-items-start gap-2">
+        <h2>1</h2>
+        <a href="#"><div class="card-text">One dead as London-Singapore flight hit by turbulence</div></a>
+    </div>
+    <!-- osmbn-crd-1 end -->
+    <div class="osmbn-crd d-flex align-items-start gap-2">
+        <h2>3</h2>
+        <a href="#"><div class="card-title">What the ICC arrest warrants mean for Israel and Hamas</div></a>
+    </div>
+    <!-- osmbn-crd-2 end -->
+    <div class="osmbn-crd d-flex align-items-start gap-2">
+        <h2>5</h2>
+        <a href="#"><div class="card-title">The BBC News app keeps you informed with live and breaking news you can trust</div></a>
+    </div>
+    <!-- osmbn-crd-3 end -->
+    <div class="osmbn-crd d-flex align-items-start gap-2">
+        <h2>7</h2>
+        <a href="#"><div class="card-title">Iran declares five days of mourning for president</div></a>
+    </div>
+    <!-- osmbn-crd-4 end -->
+    <div class="osmbn-crd d-flex align-items-start gap-2">
+        <h2>9</h2>
+        <a href="#"><div class="card-title">Teen murderer who bought 79 blades online named</div></a>
+    </div>
+    <!-- osmbn-crd-5 end -->
+
+    <div class="osmbn-crd d-flex align-items-start gap-2">
+        <h2>2</h2>
+        <a href="#"><div class="card-text">Australia and NZ begin New Caledonia evacuations</div></a>
+    </div>
+    <!-- osmbn-crd-1 end -->
+    <div class="osmbn-crd d-flex align-items-start gap-2">
+        <h2>4</h2>
+        <a href="#"><div class="card-title">Ebrahim Raisi: What we know about deadly Iran helicopter crash</div></a>
+    </div>
+    <!-- osmbn-crd-2 end -->
+    <div class="osmbn-crd d-flex align-items-start gap-2">
+        <h2>6</h2>
+        <a href="#"><div class="card-title">Pornhub partners with UK child abuse fighting charity</div></a>
+    </div>
+    <!-- osmbn-crd-3 end -->
+    <div class="osmbn-crd d-flex align-items-start gap-2">
+        <h2>8</h2>
+        <a href="#"><div class="card-title">Gazan 'shackeld and blindfolded' at Israel hospital</div></a>
+    </div>
+    <!-- osmbn-crd-4 end -->
+    <div class="osmbn-crd d-flex align-items-start gap-2">
+        <h2>10</h2>
+        <a href="#"><div class="card-title">Japan blocks iconic Mt Fuji view to deter tourists</div></a>
+    </div>
+    <!-- osmbn-crd-5 end -->
+
+
+</div>
+<!-- osmbn end -->
+</div>
+<!-- mw end -->
+
+<div class="four-crds-parent border-top border-3 border-dark">
+    <h4>Sport</h4>
+<div class="four-crds-b">
+<div class="oa">
+    <div class="card border-bottom">
+        <div class="row g-0">
+            <div class="col-md-4 d-flex align-items-center justify-content-center">
+                <div class="card-body">
+                    <h3 class="card-title fs-3">
+                        <div class="spinner-grow text-danger" role="status">
+                            <span class="visually-hidden">Loading...</span>
+                          </div> <span>LIVE</span> Reaction as Southgate leaves Rashford & Henderson out of initial England Euro 2024 squad</h3>
+                    <p class="card-text">Latest news & reaction as Gareth Southgate announces his 33-man provisional England squad for Euro 2024 - Rashford, Henderson, James, White miss out, while Mainoo, Grealish, Toney, Quansah, Eze, Wharton, selected.</p>
+                </div>
+                </div>
+            <div class="col-md-8">
+            <img src="https://ichef.bbci.co.uk/ace/standard/1024/cpsprodpb/8ab4/live/ad18aac0-1767-11ef-baa7-25d483663b8e.jpg.webp" alt="...">
+            </div>             
+        </div>
+        </div>
+</div>
+<!-- o end -->
+
+<div class="ga">
+    <div class="card h-100 border-bottom">
+        <img src="https://ichef.bbci.co.uk/news/640/cpsprodpb/5c41/live/8fb338e0-1773-11ef-81a7-e57e7b54b02a.jpg.webp" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">Rashford and Henderson left out of England squad</h5>
+            <p class="card-text">Marcus Rashford and Jordan Henderson are left out of Gareth Southgate's provisional 33-man England squad for Euro 2024.</p>
+            <p class="card-text"><small class="text-muted">3 hrs ago &nbsp; | &nbsp; England Men</small></p>
+        </div>
+        </div>
+</div>
+<!-- g end -->
+
+<div class="wa">
+    <div class="card border-bottom">
+<img src="https://ichef.bbci.co.uk/news/640/cpsprodpb/3a4a/live/8e7abc10-1777-11ef-a62a-0b5a43c99392.jpg.webp" class="card-img-top" alt="...">
+<div class="card-body">
+    <h5 class="card-title">'Difficult decision' to leave Henderson out - Southgate</h5>
+    <p class="card-text">England manager Gareth Southgate says it was a 'difficult decision" to omit Jordan Henderson from his provisional 33-man England squad for Euro 2024.</p>
+    <p class="card-text"><small class="text-muted">4 hrs ago &nbsp; | &nbsp; England Men</small></p>
+</div>
+</div>
+</div>
+<!-- w end -->
+
+<div class="ja">
+    <div class="card border-bottom">
+<img src="https://ichef.bbci.co.uk/news/640/cpsprodpb/71f4/live/326f1090-1765-11ef-806c-bf47bb1274cd.jpg.webp" class="card-img-top" alt="...">
+<div class="card-body">
+    <h5 class="card-title">Kroos to retire from football after Euro 2024</h5>
+    <p class="card-text">Real Madrid and Germany midfielder Toni Kroos is set to retire from professional football after Euro 2024.</p>
+    <p class="card-text"><small class="text-muted">6 hrs ago &nbsp; | &nbsp; European Football</small></p>
+</div>
+</div>
+</div>
+<!-- j end -->
+
+<div class="ia">
+    <div class="card border-bottom">
+<img src="https://ichef.bbci.co.uk/news/640/cpsprodpb/5c5d/live/e45c1090-15fe-11ef-9b12-1ba8f95c4917.jpg.webp" class="card-img-top" alt="...">
+<div class="card-body">
+    <h5 class="card-title">Does Newey guarantee success and should Red Bull replace Perez? - F1 Q&A</h5>
+    <p class="card-text">BBC Sport's F1 correspondent Andrew Benson answers your questions before this weekend's Monaco Grand Prix.</p>
+    <p class="card-text"><small class="text-muted">11 hrs ago &nbsp; | &nbsp; Formula 1</small></p>
+</div>
+</div>
+</div>
+<!-- i end -->
+
+<div class="ta">
+    <div class="card">
+        <div class="card-body">
+            <h5 class="card-title">Burnley's Kompany surprise candidate for Bayern job</h5>
+            <p class="card-text">Burnley boss Vincent Kompany is a surprise name on Bayern Munich’s list of potential candidates to become their new coach.</p>
+            <p class="card-text"><small class="text-muted">5 hrs ago &nbsp; | &nbsp; Premier League</small></p>
+        </div>
+        </div>
+</div>
+<!-- t end -->
+
+<div class="aa">
+    <div class="card">
+        <div class="card-body">
+            <h5 class="card-title">England return with 'pride dented' - Buttler</h5>
+            <p class="card-text">Captain Jos Buttler says England's "pride was dented" by their disappointing defence of the 50-over World Cup last year.</p>
+            <p class="card-text"><small class="text-muted">47 mins ago &nbsp; | &nbsp; Cricket</small></p>
+        </div>
+        </div>
+</div>
+<!-- a end -->
+</div>
+<!-- four-crds-4 end -->
+</div>
+<!-- four-crds-parent-3 end -->
+
+</div>
+<!-- container end -->
+
+<div class="ad-parent d-flex align-items-center justify-content-center">
+<div class="ad d-flex align-items-center justify-content-center">
+    <img src="https://tpc.googlesyndication.com/simgad/6897371298935329871" alt="">
+</div>
+<!-- ad-4 end -->
+</div>
+<!-- ad-parent end --> 
+
+<footer class="footer border-top border-3 border-dark">
+    <div class="container d-flex align-items-start justify-content-start flex-column gap-2">
+        <div class="n-center">
+            <a href="#" class="d-flex fw-bold align-items-center justify-content-start gap-2">
+                <h4>B</h4>
+                <h4>B</h4>
+                <h4>C</h4>
+            </a>
+        </div>
+        <!-- n-center -->
+
+        <div class="hnsbictevl d-flex align-items-center justify-content-start">
+            <ul class="m-0 p-0 fw-bold d-flex align-items-center justify-content-center">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">Sport</a></li>
+                <li><a href="#">Business</a></li>
+                <li><a href="#">Innovation</a></li>
+                <li><a href="#">Culture</a></li>
+                <li><a href="#">Travel</a></li>
+                <li><a href="#">Earth</a></li>
+                <li><a href="#">Video</a></li>
+                <li><a href="#">Live</a></li>
+                <li><a href="#">Audio</a></li>
+                <li><a href="#">Weather</a></li>
+                <li><a href="#">BBC Shop</a></li>
+            </ul>
+        </div>
+        <!-- hnsbictevl end -->
+
+        <div class="dropdown">
+            <button style="background-color: rgb(230, 232, 234);" class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+              BBC in other languages
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+              <li><a class="dropdown-item" href="#">Oduu Afaan Oromootiin</a></li>
+              <li><a class="dropdown-item" href="#">Arabic عربي</a></li>
+              <li><a class="dropdown-item" href="#">Hindi हिन्दी</a></li>
+              <li><a class="dropdown-item" href="#">Turkish TÜRKÇE</a></li>
+              <li><a class="dropdown-item" href="#">Korean 한국어</a></li>
+              <li><a class="dropdown-item" href="#">Urdu اردو</a></li>
+            </ul>
+          </div>
+          <!-- dropdown end -->
+
+          <hr style="width: 100%;">
+
+          <div class="tapcd">
+            <ul class="m-0 p-0 d-flex align-items-center justify-content-start gap-3">
+                <li><a href="#">Terms of Use</a></li>
+                <li><a href="#">About the BBC</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Cookies</a></li>
+                <li><a href="#">Accessibility Help</a></li>
+                <li><a href="#">Contact the BBC</a></li>
+                <li><a href="#">Advertise with us</a></li>
+                <li><a href="#">Do not share or sell my info</a></li>
+                <li><a href="#">Contact technical support</a></li>
+            </ul>
+          </div>
+          <!-- tapcd end -->
+
+          <div class="cr">
+            <p>Copyright 2024 BBC. All rights reserved.  The BBC is not responsible for the content of external sites. <strong>Read about our approach to external linking.</strong></p>
+          </div>
+          <!-- cr end -->
+    </div>
+    <!-- container end -->
+</footer>
+<!-- footer end -->
+            
+            
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+ 
